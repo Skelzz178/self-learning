@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Map</title>
+  </head>
+  <body>
+    <p>Below is an example of a clickable image using the map tag</p>
+    <img
+      src="items-on-desk.jpg"
+      alt="Some items on a desk"
+      style="width: 500px"
+      usemap="#workmap" />
+    <map name="workmap">
+      <area
+        shape="rect"
+        coords="10,60,125,150"
+        href="https://www.google.com/search?q=plant"
+        alt="plant" />
+      <area
+        shape="circle"
+        coords="360,240,40"
+        href="https://www.google.com/search?q=coffee"
+        alt="coffee" />
+    </map>
+  </body>
+</html>
+
+<!-- Image Map -->
+
+<!-- 
+    <map>
+        - Used to declare clickable areas on a map image
+    
+        Attribute
+            name
+            - Use to declare name
+            - To be specify in <img> tag's usemap attribute
+-->
+
+<!-- 
+    <area>
+        - Used to define clickable area on the map image
+        - Declare inside the <map> tag
+        - Can use javascript in onclick attribute to run js code on mapped area
+            
+        Attributes
+            shape
+            - rect: to define rectacular region    
+            - circle: to define circle region
+            - poly: to define polygonal region
+            - default: to define entire region
+
+            coords
+            - Defines coordinates based on shape value
+            - shape="rect"
+                - First 2 values = x,y coords of top-left of area
+                - Last 2 values = x,y coords of bottom-right of area
+                - A rectangular shape will be created based on this 2 points
+            - shape="circle"
+                - First 2 values = x,y coords of center of area
+                - 3rd value = radius of circle
+            - shape="poly"
+                - Every 2 values represent x,y coords of area point
+                - Each set connected by straight line to form a shape
+                - Can use to draw any shape
+-->

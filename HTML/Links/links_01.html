@@ -5,5 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Links</title>
   </head>
-  <body></body>
+  <body>
+    <p>
+      This uses the a tag to link to <a href="https://www.google.com">Google</a>
+    </p>
+    <br />
+    <p>Below shows usage of target attribute to open links different</p>
+    <p>
+      Using _self value to open in the same window/tab it was clicked on
+      <a href="https://www.google.com" target="_self">Google</a>
+    </p>
+    <p>
+      Using the _blank value to open in a new tab
+      <a href="https://www.google.com" target="_blank">Google</a>
+    </p>
+    <p>
+      Using the _parent value to open in the parent frame
+      <a href="https://www.google.com" target="_parent">Google</a>
+    </p>
+    <p>
+      Using the _top value to open in the full body of the window
+      <a href="https://www.google.com" target="_top">Google</a>
+    </p>
+    <br />
+    <p>
+      Below are examples of Relative URLs that links to pages on the same
+      website
+    </p>
+    <p>This is a link to <a href="links_02.html">links_02</a></p>
+    <br />
+    <p>Below is using an image as a link to Google</p>
+    <a href="https://www.google.com"
+      ><img src="google logo.png" alt="Google logo" style="width: 200px"
+    /></a>
+    <br />
+    <p>
+      You can also use the mailto: inside href attribute to open email program
+    </p>
+    <a href="mailto:test@abc.com" target="_blank">Send email</a>
+    <br />
+    <p>You can also use javascript on a button to use it as a link</p>
+    <button onclick="document.location='links_02.html'">Open links_02</button>
+    <br />
+    <p>
+      Using the title attribute shows tooltip over the link when you hover it
+    </p>
+    <a href="https://www.google.com" title="Most popular search engine"
+      >Google</a
+    >
+    <br />
+  </body>
 </html>
+
+<!-- Links -->
+
+<!-- 
+  <a>
+    - Defines an anchor tag to link to other pages
+    - Can wrap around the <img> tag to use image as link
+
+    Attributes
+      href
+        - Used to define link location
+        - Can be Absoulte or Relative links
+        - Can use mailto: to open default email messaging program
+
+      target
+        - Used to set how links are opened
+        - _self - Default. Opens in the same window/tab as link
+        - _blank - Opens in a new tab
+        - _parent - Opens in the parent frame
+        - _top - Opens in the full body of the window
+
+      title
+        - Used to provide additional information on link
+        - Value will be shown as a tooltip over the link on hover
+-->
