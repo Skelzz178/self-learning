@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture Element</title>
+  </head>
+  <body>
+    <p>
+      Below is an example if using the picture tag to set different image for
+      different viewport width
+    </p>
+    <ul>
+      <li>Viewport width below 500px shows desk items</li>
+      <li>Viewport width 500-719px shows a star</li>
+      <li>Viewport width above 720px shows a lake</li>
+    </ul>
+    <picture>
+      <source media="(min-width: 720px)" srcset="lake.jpg" />
+
+      <source media="(min-width: 500px)" srcset="star.jpg" />
+      <img src="items-on-desk.jpg" alt="" width="500" />
+    </picture>
+  </body>
+</html>
+
+<!-- 
+    <picture>
+        - Allows the display different images for different screen size or devices
+        - Has <source> and <img> tag as child to set images
+        - Browser will use the 1st <source> element and ignore the rest if attribute matches
+
+    <source>
+        - Use to set which image to use based on media attribute values
+
+        Attributes
+            media
+            - Used to set CSS media queries
+
+            srcset
+            - Used to set source of image
+            - Audio & Video files uses the src attribute instead
+-->
