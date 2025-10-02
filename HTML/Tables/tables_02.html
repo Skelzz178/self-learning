@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 20px;
+      }
+    </style>
+    <title>Table Colspan, Rowspan and using Colgroup</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th colspan="2">2 Col</th>
+        <th>1 Col</th>
+      </tr>
+      <tr>
+        <td>1 Row</td>
+        <td rowspan="2">2 Row</td>
+        <td>1 Row</td>
+      </tr>
+      <tr>
+        <td>1 Row</td>
+        <td>1 Row</td>
+      </tr>
+    </table>
+    <p>Below is a sample of a table of using colgroup to set column colors</p>
+    <table>
+      <caption>
+        A table with first 2 columns colored blue
+      </caption>
+      <colgroup>
+        <col span="2" style="background-color: aqua" />
+      </colgroup>
+      <tr>
+        <th>Blue Header</th>
+        <th>Blue Header</th>
+        <th>Header</th>
+        <th>Header</th>
+      </tr>
+      <tr>
+        <td>Blue</td>
+        <td>Blue</td>
+        <td>Normal</td>
+        <td>Normal</td>
+      </tr>
+      <tr>
+        <td>Blue</td>
+        <td>Blue</td>
+        <td>Normal</td>
+        <td>Normal</td>
+      </tr>
+      <tr>
+        <td>Blue</td>
+        <td>Blue</td>
+        <td>Normal</td>
+        <td>Normal</td>
+      </tr>
+      <tr>
+        <td>Blue</td>
+        <td>Blue</td>
+        <td>Normal</td>
+        <td>Normal</td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+<!-- Table Colspan & Rowspan -->
+
+<!--
+    Attributes
+        colspan
+            - Defines the number of column the cell should span
+
+        rowspan
+            - Defines the number of rows the cell should span
+-->
+
+<!-- 
+    <colgroup>
+        - child element of <table>
+        - Used to group columns to apply styles
+        - Legal CSS properties allowed: border, width, visibility, background
+
+    <col>
+        - child element of <colgroup>
+        
+        Attributes
+            span
+                - Used to set number of columns to affect
+
+            style
+                - Used to set CSS styles
+-->

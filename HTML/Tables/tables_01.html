@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+      table,
+      th,
+      td {
+        border-collapse: separate;
+      }
+
+      table {
+        border: 1px solid black;
+        border-spacing: 20px;
+      }
+
+      th {
+        border: 1px dotted black;
+      }
+
+      td {
+        border: 1px double blue;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Below is sample of a Table with simple border styling</p>
+    <table>
+      <caption>
+        This is a caption for the below table
+      </caption>
+      <tr>
+        <th>First</th>
+        <th>Second</th>
+        <th>Third</th>
+      </tr>
+      <tr>
+        <td>One</td>
+        <td>Two</td>
+        <td>Three</td>
+      </tr>
+      <tr>
+        <td>Four</td>
+        <td>Five</td>
+        <td>Size</td>
+      </tr>
+    </table>
+    <p>Below is some example of using CSS for sizing table</p>
+    <ul>
+      <li>Table width is set to 100% to use its full parent element width</li>
+    </ul>
+    <table style="width: 100%">
+      <tr>
+        <th>First</th>
+        <th width="50%">width 50%</th>
+        <th>Third</th>
+      </tr>
+      <tr height="300">
+        <td>height 300px</td>
+        <td>height 300px</td>
+        <td>height 300px</td>
+      </tr>
+      <tr>
+        <td>Test</td>
+        <td>Test</td>
+        <td>Test</td>
+      </tr>
+    </table>
+    <p>Below is a sample table where table header is placed vertically</p>
+    <table>
+      <tr>
+        <th>Header 1</th>
+        <td>normal data</td>
+        <td>normal data</td>
+      </tr>
+      <tr>
+        <th>Header 2</th>
+        <td>normal data</td>
+        <td>normal data</td>
+      </tr>
+      <tr>
+        <th>Header 3</th>
+        <td>normal data</td>
+        <td>normal data</td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+<!-- Tables -->
+
+<!-- 
+    <table>
+        - Used to create a table
+
+    <caption>
+        - child element of <table>
+        - Serves as a header for the table 
+
+    <tr>
+        - child element of <table>
+        - Used to define table row
+
+    <th>
+        - child element of <tr>
+        - Used to define table header
+        - Can be used either horizontally and vertically
+        - By default will be bold and centered
+
+    <td>
+        - child element of <tr>
+        - Used to define table data
+
+    CSS Styling
+        - Use to style the table
+        
+        Properties
+            border
+                - Used to add border to the table
+                - border: 1px, solid, black; 
+                    Add to table, th, td to add borders to whole table
+
+            border-collapse
+                - Used to define settings of border collapse
+                - border-collapse: collapse;
+                    - Used to collapse borders into a single border
+
+            border-radius
+                - Used to create roundness in the border
+                    border-radius: 10px;
+                        - Create a roundness of 10px on the border
+
+            border-style
+                - Used to set style of the border
+                - Available styles
+                    - dotted, dashed, solid, double, groove, ridge, inset, outset
+
+            border-color
+                - Used to set color of the border
+
+            border-spacing
+                - Used to set space between cells
+                - To be used on the <table> element
+
+            padding
+                - Used to set spacing between the content and its border
+                - Used on th, td
+-->
