@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="forms_01.html" method="post" id="form1">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" /> <br />
+      <label for="job">Job:</label><br />
+      <input type="text" id="job" /><br />
+      <p>Sex</p>
+      <input type="radio" name="sex" id="male" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" name="sex" id="female" value="female" />
+      <label for="female">Female</label>
+      <p>Checkboxes</p>
+      <input type="checkbox" name="checkbox" id="checkbox1" value="checkbox1" />
+      <label for="checkbox1">Checkbox 1</label> <br />
+      <input type="checkbox" name="checkbox2" id="checkbox2" />
+      <label for="checkbox2">Checkbox 2</label> <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <p>
+      This below in also belongs to the above form by using the form attribute
+    </p>
+    <label for="age">Age</label> <br />
+    <input type="number" name="age" id="age" form="form1" /><br />
+  </body>
+</html>
+
+<!-- Forms -->
+
+<!-- 
+    <form>
+        - Used to create a form for user input
+        - Form elements will be child of this element
+
+        Attributes
+            action
+                - Defines the action to be taken when the form is submitted
+
+            target
+                - Specifies where to display the response received after submitting the form
+
+                values
+                    - _self = Display in current window (default)
+                    - _blank = Display in a new window or tab
+                    - _parent = Display in parent frame
+                    - _top = Display in the full body of the window
+                    - 'framename' = Display in the named iframe
+
+            method
+                - Specifies the HTTP method when submitted the form
+
+                values
+                    - get = Uses the GET method. Usually for retrieving data. Shows form-data in name-value pair in URL (default)
+                    - post = Uses the POST method. Usually for submitting data.
+
+            autocomplete
+                - Sets whether the form allows autocomplete
+                
+                values
+                    - on = Allows autocomplete for the form
+
+            novalidate
+                - A boolean attribute
+                - Specifies the form-data should not be validated upon submit 
+
+
+    <label>
+        - Used to define a label for a form element
+
+        Attributes
+            for
+                - Used to indicate the label is for which form element by id
+                - value should be the id of form element its labelling for
+
+
+    <input>
+        - Creates an input element
+
+        Attributes
+            type
+                - Set the input type of the element
+
+                values
+                    - text = Create text input box
+                    - radio = Create a radio. Only can select 1 radio option in a form
+                    - checkbox = Create a checkbox input
+                    - submit = Create a submit button
+                    - There are many other values for different input types
+
+            name
+                - To set the name of the form element when its submitted
+                - input value will not be sent if name is blank
+
+            value
+                - To set the value of the element
+                - Important to include for elements with no user input such as checkbox, radio etc
+
+        Restrictions Attribute
+            - These are attributes that set the state or restrictions of the element
+            - Some examples: min, max, checked, readonly, disabled, size
+
+        form* attributes
+            form
+                - specifies the form the input belongs to
+                - value is to be the id of the form
+
+            formaction
+                - Used with input type image and submit
+                - Specifies the URL of the page that will process the form upon submit
+                - Overrides the <form> action attribute
+
+            formenctype
+                - Used with input type image and submit
+                - Specifies how to form-data should be encoded upon submit
+                - Overrides the <form> enctype attribute
+
+            formmethod
+                - Used with input type image and submit
+                - Define the HTTP method for sending the form-data to the URL
+                - Overrides the <form> method attribute
+
+            formtarget,  formnovalidate
+                - Similar rules to the other above form* attributes
+                - Used on input type submit and image
+                - Overrides its target/novalidate attribute in the <form> element
+-->
