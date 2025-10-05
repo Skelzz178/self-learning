@@ -15,6 +15,33 @@
         <option value="toyota">Toyota</option>
         <option value="bmw" selected>BMW</option>
       </select>
+      <p>Below is a textarea element to for multiple line inputs</p>
+      <label for="desc">Description</label><br />
+      <textarea name="desc" id="desc" rows="5" cols="50">
+Random descriptions
+</textarea
+      >
+      <p>Below is a button element</p>
+      <button type="button">Yes</button>
+      <p>Below section uses the fieldset element to group some form elements</p>
+      <fieldset style="width: 50%">
+        <legend>Grouped form elements</legend>
+        <label for="fs1">First Input:</label><br />
+        <input type="text" id="fs1" name="fs1" /><br />
+        <label for="fs2">Second Input:</label><br />
+        <input type="text" name="fs2" id="fs2" /><br /><br />
+        <input type="submit" value="submit" />
+      </fieldset>
+      <p>
+        Below is an example of using the datalist element to show pre-defined
+        options
+      </p>
+      <input list="data1" />
+      <datalist id="data1">
+        <option value="first"></option>
+        <option value="second"></option>
+        <option value="third"></option>
+      </datalist>
     </form>
   </body>
 </html>
@@ -39,5 +66,39 @@
 
       Attributes
         selected
-          - Used to select that particular option as the default
+          - Used to select that particular option upon page load
+
+    <textarea>
+      - Used to create multi-line input
+
+      Attributes
+        rows
+          - Used to define number of visible rows
+          - value = number of visible rows (in chars)
+
+        cols
+          - Used to define width of textarea
+          - value = number of size of width (in chars)
+
+    <button>
+      - Used to define a clickable button
+
+      Attributes
+        type
+          - Used to specify type of button
+          -
+          
+    <fieldset>
+      - Used to group related data in a form
+
+    <legend>
+      - Defines a caption for the fieldset element
+
+    <datalist>
+      - Specifies list of pre-defined options for a input element
+
+      Attributes
+        id
+          - set the id for this datalist
+          - Used by the <input> list attribute for it to refer to this datalist
 -->

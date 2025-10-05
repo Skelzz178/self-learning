@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Semantics</title>
+    <style>
+      header,
+      article,
+      section,
+      aside,
+      footer,
+      figure,
+      details {
+        border: 1px solid black;
+        padding: 5px 15px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>This h1 element is wrapped by a header element</h1>
+      <p>
+        header elements are used to represent the introductory part of that
+        section
+      </p>
+    </header>
+    <nav>
+      <p>The below links are wrapped in a nav element</p>
+      <a href="">Listings</a><a href="">Articles</a><a href="">About</a>
+    </nav>
+    <section>
+      <article>
+        <h2>
+          This header is inside an article element, which is inside a section
+          element
+        </h2>
+        <ul>
+          <li>
+            article element specifies self-contained content that makes sense on
+            its own
+          </li>
+          <li>
+            Such as blog post, product cards, user comments, newspaper articles
+            etc
+          </li>
+        </ul>
+      </article>
+    </section>
+    <aside>
+      <h2>This heading is inside a aside element</h2>
+      <p>
+        The aside element is used to represent content which are not directly
+        related to the main content it is placed
+      </p>
+    </aside>
+    <figure>
+      <p>
+        This is inside a figure element for self contained content like
+        illustrations
+      </p>
+      <p>figcaption element is used to provide caption for the image</p>
+      <img src="../Images/lake.jpg" alt="Picture of a lake" width="200" />
+      <figcaption>This is an image of a lake</figcaption>
+    </figure>
+    <details>
+      <summary>
+        This is a summary element which is a heading for the details element
+      </summary>
+      <p>Some random information</p>
+    </details>
+    <footer>
+      <p>
+        This is inside a footer element which is placed at the bottom of a
+        document or section
+      </p>
+      <p>
+        It is mainly used for additional info such as contact info, copyright
+        info, sitemaps etc
+      </p>
+    </footer>
+  </body>
+</html>
+
+<!-- HTML Semantics -->
+
+<!-- 
+    <header>
+        - Used to represent the container of introductory content or set of navigation links
+        - You can have several <header> in a document
+        - Cannot be used inside another <header>, <footer>, <address>
+-->
+
+<!-- 
+    <section>
+        - Used to define a section in a document
+        - A thematic grouping of content, typically with a heading
+-->
+
+<!-- 
+    <article>
+        - Used to represent self-contained content
+        - Its content should make sense on its own
+-->
+
+<!-- 
+    <footer>
+        - Used as a container at the bottom of a document or section
+        - You can have several footers in a document
+        - Usually used for copyright information, sitemaps, related documents, contact info etc
+-->
+
+<!-- 
+    <nav>
+        - Used to define a set of navigational links
+        - Intended for major blocks of navigation links
+-->
+
+<!-- 
+    <aside>
+        - Used to define some content aside from the content it is placed in
+        - Example such as a sidebar, side information etc
+-->
+
+<!-- 
+    <figure>
+        - Used to define self contained content of images such as illustrations, diagrams, photos etc
+        - <img> element to be used for the actual image
+-->
+
+<!-- 
+    <figcaption>
+        - Used to provide caption for the <img> in a <figure> element
+-->
+
+<!-- 
+    Some other semantic elements
+
+    <details>
+        - Defines additional content the user can show or hide
+
+    <summary>
+        - Defines a visible heading for the <details> elements
+
+    <main>
+        - Specifies the main content of a document
+
+    <time>
+        - Defines a date/time
+-->
